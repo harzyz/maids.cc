@@ -1,0 +1,69 @@
+.wrapper{
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 50px;
+  font-weight: 500;
+  /* border: 1px solid red; */
+}
+.searchInput{
+  border: 1px solid #666;
+  width: 200px;
+  /* border-radius: 8px; */
+  height: 40px;
+  padding: 0 10px;
+}
+.user_list{
+  width: 100%;
+  /* border: 1px solid red; */
+  padding: 0;
+}
+.user_list p{
+  margin: 0;
+}
+.user_list_header{
+  display: flex;
+  padding-left: 50px;
+  gap: 20px;
+}
+.user_list_header span{
+
+  text-align: left;
+}
+.user_name{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 40%;
+}
+.user_email{
+  width: 30%;
+}
+.user_id{
+  width: 30px;
+}
+.user_card{
+  padding-left: 50px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-radius: 5px;
+  height: 50px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.user_photo{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.user_photo img{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.pagination{
+  width: 100%;
+  justify-content: end;
+  gap: 20px;
+  display: flex;
+}

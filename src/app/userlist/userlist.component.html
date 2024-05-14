@@ -1,0 +1,23 @@
+<div class="wrapper">
+  <input class="searchInput" placeholder="Search user" (input)="onSearch()" type="text" [(ngModel)]="searchUser" />
+  <button (click)="get()">get users</button>
+  <button (click)="pageer(1)">1</button>
+  <button (click)="pageer(2)">2</button>
+  <div class="user_list_header">
+    <span class="user_id">SN</span><span class="user_name">Name</span><span class="user_email">Email</span>
+  </div>
+  <ul class="user_list" *ngFor="let user of users">
+    <li class="user_card" *ngIf="!isLoading" (click)="readMore(user)">
+      <p class="user_id">{{ user.id }}.</p>
+      <div class="user_name">
+        <div class="user_photo">
+          <img [src]="user.avatar" alt="" />
+        </div>
+        <span>{{ user.first_name }} {{ user.last_name }}</span>
+      </div>
+      <p class="user_email">{{ user.email }}</p>
+    </li>
+  </ul>
+  <h1 *ngIf="isLoading">Loading...</h1>
+  <div class="pagination"><span>Prev</span><span>Next</span></div>
+</div>
